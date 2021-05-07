@@ -1,0 +1,346 @@
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+html,
+ {
+          background-color: #fff;
+          color: #555;
+          font-family: 'Nunito Sans', sans-serif;
+          font-weight: 300;
+          font-size: 20px;
+          text-rendering: optimizeLegibility;
+          overflow: hidden;
+}
+
+body {
+          
+          font-family: 'Nunito Sans', sans-serif;
+}
+
+/* to clear the float of photos after the element */
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+          content: ".";
+          clear: both;
+          display: block;
+          height: 0;
+          visibility: hidden;
+}
+
+.row {
+          /* max-width: 1140px; */
+          margin: 0 0;
+          background-color: white;
+}
+/* HEADER */
+header {
+          background-image: url(img/Speech-therapy.png);
+          background-size: cover;
+          background-position: center;
+          height: 100vh;
+          background-attachment: fixed;
+}
+
+.hero-text-box {
+          position: absolute;
+          width: 1140px;
+          top: 60%;
+          left: 5%;
+}
+
+.logo {
+          height: 50px;
+          width: auto;
+          float: left;
+          margin-top: 10px;
+          margin-left: 30px;
+}
+
+.main-nav {
+          float: right;
+          list-style: none;
+          margin: 20px 30px 0 0;
+}
+
+.main-nav li {
+          display: inline-block;
+          margin-left: 30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+          padding: 8px 0;
+          color: #f3a70b;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 90%;
+          font-weight: 600;
+          border-bottom: 2px solid transparent;
+          transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+          border-bottom: 2px solid #f3a70b;
+}
+
+h1,
+h2,
+h3 {
+          margin : 0;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+}
+
+h1 {
+          margin : 0;
+          margin-bottom: 20px;
+          font-size: 240%;
+          font-weight: 300;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          word-spacing: 3px;
+}
+
+h2 {
+          font-weight: 400;
+          font-size: 200%;
+          word-spacing: 2px;
+          text-align: center;
+          color: rgb(25, 138, 135);
+          margin-bottom: 50px;
+          letter-spacing: 1px;
+          
+}
+
+h2:after {
+          display: block;
+          height: 3px;
+          background-color: #f3a70b;
+          content: " ";
+          width:250px;
+          margin: 0 auto;
+          margin-top: 15px;
+}
+
+h3 {
+          font-size: 110%;
+          margin-bottom: 15px;
+          text-align-last: left;
+
+}
+
+.long-copy {
+          line-height: 145%;
+          width: 70%;
+          margin-left: 15%;
+          text-align: center;
+          margin-bottom: 35px;
+          font-weight: 400;
+
+}
+
+.box p {
+          font-size: 90%;
+          line-height: 145%;
+          
+}
+
+.author p {
+          font-size: 90%;
+          line-height: 135%;
+          font-weight: 400;
+          margin-top: 15px;
+          
+}
+/* how the botton looks after clicking on */
+.btn:link,
+.btn:visited {
+          display: inline-block;
+          padding: 10px 30px;
+          font-weight: 200;
+          text-decoration: none;
+          border-radius: 15px;
+          transition: background-color 0.2s, border 0.2s, color 0.2s;
+          
+          /* color: #fff;  transition to change the color smoothly*/
+}
+
+
+.btn-full:link,
+.btn-full:visited {
+          background-color: #f6b93b;
+          border: 1px solid #f6b93b;
+          color: #fff;
+          margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+          color: #f6b93b;
+          background-color: #fff;
+          border: 1px solid #f6b93b;
+}
+/* a btn gets darker when we hover on it or when we click on it */
+.btn:hover,
+.btn:active {
+          background-color: #f3a70b;
+          border: 1px solid #f3a70b;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+          color: #fff;
+}
+
+section {
+          padding: 60px 40px;
+}
+
+.puzzle {
+          width: 40px;
+          height: 40px;
+          float: left;
+          margin: 0 4px;
+}
+
+.box{ 
+          padding: 1%;
+
+}
+
+.section-photos {
+          padding: 0;
+          margin:0;
+}
+
+.photos-therapy {
+          list-style: none;
+          width: 100%;
+}
+
+.photos-therapy li {
+          display: block;
+          float: left;
+          width: 25%;
+}
+
+.photos {
+          width: 100%;
+          margin: 0;
+          overflow: hidden;
+          background-color:gray;
+
+}
+
+.photos img {
+          opacity: 0.7;
+          width: 90%;
+          height: auto;
+          transform: scale(1.45);
+          transition: transform 0.5s, opacity 0.5s ;
+}
+/* in order to get the effect everything from 'hover' we need to add to transition */
+.photos img:hover {
+          opacity: 1;
+          transform: scale(1.23);
+}
+
+.steps-box {
+          margin-top: 30px;
+}
+
+.steps-box:first-child {
+          text-align: right;
+          padding-right: 3%;
+}
+
+
+.steps-box:last-child {
+          padding-left: 3%;
+          padding-right: 5%;
+          text-align: left;
+
+}
+
+.logopeda-img {
+          height: 350px;
+          width: auto;
+          border: 1px solid rgb(25, 138, 135);
+          border-radius: 5%;
+}
+
+.author {
+          text-align: center;
+
+}
+
+.puzz-img {
+          height: 50px;
+          width: auto;
+}
+
+.quote-section {
+          margin-left: 5%
+          text-align: center;
+}
+
+.logopeda-author div {
+          background-color: rgb(243, 241, 241);
+}
+.logopeda-author {
+          background-color: rgb(243, 241, 241);
+}
+
+.quote-footer {
+          text-align: center;
+          color: rgb(25, 138, 135);
+}
+
+.prologos-dane {
+          width: auto;
+          height: 175px;
+          margin-left: 25%;
+}
+
+.quote-section {
+          background-image: url(img/chlopiec.png);
+          background-size: cover;
+          height: 80vh;
+          width: auto;
+          font-size: 110%;
+          font-weight: 500;
+          /* background-attachment: fixed; */
+
+}
+
+.quote {
+          width: 90%;
+          margin-left: 10%;
+          margin-right: 10%;
+          color: #f3a70b;
+          margin-top: 80px;
+          text-align: center;
+          line-height: 165%;
+}
+
+.sticky {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color:rgba(231, 225, 225, 0.857);
+          z-index: 9999;
+}
+
+/* .js-wp {
+          opacity: 0;
+}
+
+.js-wp.animated {
+          opacity: 1;
+} */
